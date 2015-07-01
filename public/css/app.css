@@ -1,0 +1,122 @@
+body {
+  margin-right: 0px; }
+
+#body {
+  background-color: #F0F0F0; }
+
+#SingleArticle {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px; }
+
+#SingleArticleTitle {
+  font-size: 2em; }
+
+#SingleArticleText {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%; }
+
+#SingleArticleAuthor {
+  font-size: .75em; }
+
+#SingleArticleBody {
+  margin-top: 5%;
+  text-indent: 50px;
+  text-align: justify; }
+
+#SingleArticleTag {
+  margin-top: 5%;
+  margin-bottom: 10%; }
+
+#SingleArticleButtons, #SingleAuthorButtons {
+  padding-bottom: 10px; }
+
+#deleteButton {
+  display: inline-block; }
+
+#editButton {
+  display: inline-block; }
+
+#SingleAuthorProfilePicture {
+  margin-left: auto;
+  margin-right: auto; }
+
+#SingleAuthorName {
+  font-size: 2em; }
+
+#SingleAuthor {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  max-width: 900px; }
+
+#SingleAuthorProfile {
+  margin-top: 5%;
+  text-indent: 50px;
+  text-align: justify; }
+
+#SingleAuthorInnerText {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 10%; }
+
+.articleTags {
+  list-style-type: none;
+  display: inline-block; }
+
+#deleteModal {
+  z-index: 2000; }
+
+#modalCancelButton {
+  display: inline-block; }
+
+#modalDeleteButton {
+  display: inline-block; }
+
+.coords {
+  display: none; }
+
+.indexArticleImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+#indexArticle {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 900px; }
+
+.indexArticleTitle {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: white;
+  z-index: 1;
+  font-size: 2em;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.indexArticleTime {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: white;
+  z-index: 1;
+  font-size: .75em;
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+#indexAll {
+  background-color: white; }
+
+/*# sourceMappingURL=app.css.map */

@@ -10,11 +10,15 @@
 		<div id="SingleAuthorName">{{ $user->name}}</div>
 
 		<div id="SingleAuthorProfile">{{ $author->profile }}</div>
+
+	@if(isset($isAuthor))
 	@if($isAuthor === true)
 <!-- Article Controls -->
 	<div id="SingleAuthorButtons">
 	@include('partials.AuthorAuthUserButtonsPartial')
 	</div>
+@endif
+
 @endif
 
 

@@ -122,9 +122,14 @@ class AuthorsController extends Controller {
 
 		$user = User::findorfail($author->user_id);
 
-		$currentUser = Auth::user()->id;
+		
+		if(Auth::user())
+		{
+			$currentUser = Auth::user()->id;
+			$isAuthor = $this->AuthAuthor($currentUser ,$author->user_id);
+		}
 
-		$isAuthor = $this->AuthAuthor($currentUser ,$author->user_id);
+		
 
 
 		return view( 'ShowSingleAuthor' , compact('author', 'user', 'isAuthor'));

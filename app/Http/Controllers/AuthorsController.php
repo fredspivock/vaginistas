@@ -37,9 +37,17 @@ class AuthorsController extends Controller {
 	{
 		$user = Auth::user()->id;
 
-		$author = Author::where('user_id', '=', $user)->first();
+		//Check to see if author has created profile, if not redirect them to create a profile.
+		if($author = Author::where('user_id', '=', $user)->first())
+		{
+			return redirect('authors/'. $author->id);
+		}
+		else
+		{
+			return redirect('authors/create');
+		}
 
-		return redirect('authors/'. $author->id);
+		
 
 	}
 	/**
@@ -117,10 +125,10 @@ class AuthorsController extends Controller {
 	 */
 	public function show(Author $author)
 	{
-		//
-
 
 		$user = User::findorfail($author->user_id);
+
+
 
 		
 		if(Auth::user())

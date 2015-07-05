@@ -8,7 +8,11 @@
 	<img src="{{ $article->image_path }}" class="img-responsive"></img>
 	<div id="SingleArticleText">
 		<div id="SingleArticleTitle">{{ $article->title }}</div>
+		@if(isset($authorId))
 		<div id="SingleArticleAuthor">Written by <a href="{{ url('authors/'. $authorId) }}">{{ $User->name }}</a></div>
+		@else
+		<div id="SingleArticleAuthor">Written by {{ $User->name }}</div>
+		@endif
 		<div id="SingleArticleBody">{{  $article->body }}</div>
 		<div id="SingleArticleTag">
 		

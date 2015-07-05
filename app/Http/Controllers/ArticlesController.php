@@ -191,11 +191,12 @@ class ArticlesController extends Controller {
 		
 		$isAuthor = $this->isAuthor($currentUser, $article->user_id);
 
-		$authorId = Author::where('user_id', $User->id )->first();
-
+		if($authorId = Author::where('user_id', $User->id )->first())
+		{
+			$authorId = $authorId->id;
+		}
 
 		
-		$authorId = $authorId->id;
 
 
 		
